@@ -1,17 +1,11 @@
-import './App.css'
+import "./App.css";
 // import {Route, Routes} from "react-router-dom";
-import Header from './components/Header/Header.tsx';
+import Page from "./containers/Page/Page.tsx";
 
 const App = () => {
-
   return (
     <>
-      <header>
-        <Header/>
-      </header>
-      <main>
-
-      </main>
+      <Page />
 
       {/*<Routes>*/}
 
@@ -26,7 +20,7 @@ const App = () => {
 
       {/*</Routes>*/}
     </>
-  )
+  );
 };
 
-export default App
+export default App;
