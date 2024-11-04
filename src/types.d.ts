@@ -10,3 +10,7 @@ export interface IFoodMutation {
   description: string;
   calories: number;
 }
+
+export interface FoodCart {
+  dish: IFood;
+}
