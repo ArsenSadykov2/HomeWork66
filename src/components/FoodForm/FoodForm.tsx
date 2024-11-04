@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IFood, IFoodMutation } from "../../types";
 import * as React from "react";
+import { NavLink } from 'react-router-dom';
 
 interface Props {
   addNewFood: (newFood: IFood) => void;
@@ -87,7 +88,7 @@ const FoodForm: React.FC<Props> = ({ addNewFood }) => {
           required
         />
       </div>
-      <button className="btn btn-primary">Save</button>
+      <NavLink to="/" className="btn btn-primary">Save</NavLink>
     </form>
   );
 };

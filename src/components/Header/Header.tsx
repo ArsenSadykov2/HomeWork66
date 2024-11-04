@@ -1,16 +1,16 @@
-import * as React from 'react';
 
-interface Props {
-  changeLocation: (page: string) => void;
-}
-const Header: React.FC<Props> = ({changeLocation}) => {
+import { NavLink } from 'react-router-dom';
+
+const Header = () => {
 
   return (
     <div>
       <nav className="navbar bd-primary p-2 bg-primary text-white">
-        <div className="container-fluid row ">
+        <div className="container-fluid row p-2">
           <span className="col-4 fs-2">Total calories:</span>
-          <a href="#" onClick={() => changeLocation('newDish')} className="btn btn-dark col-2 ">Add new Meal</a>
+          <li className="col-4 ">
+            <NavLink to="newDish" className="btn btn-dark col-2 w-25">Add new Meal</NavLink>
+          </li>
         </div>
       </nav>
     </div>

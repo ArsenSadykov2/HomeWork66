@@ -1,0 +1,9 @@
+.deleteBtn {
+  padding: 10px;
+  background: url("assets/trash-can.png") center center no-repeat ;
+}
+.redactorBtn {
+  border: 1px solid black;
+  padding: 10px;
+  background: url("assets/edit.png") center center no-repeat;
+}
